@@ -82,3 +82,42 @@ footer{
   .an{
     display: none;
   }
+  .circle {
+    height: 40px;
+    margin: 50px auto;
+    position: absolute;
+    top: 40%;
+    left: 48%;
+    text-align: center;
+    width: 40px;
+    -webkit-animation: circle_dot 2.0s infinite linear;
+            animation: circle_dot 2.0s infinite linear;
+}
+.circle1, .circle2 {
+    height: 60%;
+    display: inline-block;
+    background-color: #ef5f38;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    width: 60%;
+    -webkit-animation: circle_bounce 2.0s infinite ease-in-out;
+            animation: circle_bounce 2.0s infinite ease-in-out;
+}
+
+.circle2 {
+    bottom: 0;
+    top: auto;
+    -webkit-animation-delay: -1.0s;
+            animation-delay: -1.0s;
+}
+.dc{
+  padding: 0px;
+  font-weight: bold;
+  display: block;
+}
+.dc p{
+  text-align: center;
+  display: block;
+
+}
