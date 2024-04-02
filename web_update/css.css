@@ -1,0 +1,48 @@
+.product {
+  height: 500px;
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  padding: 20px; /* Khoảng cách từ cạnh card đến nội dung bên trong */
+}
+
+.fa-trash {
+  color: rgb(255, 0, 0);
+}
+.heart{
+  color: rgb(202, 191, 191);
+}
+.heart:hover{
+  color: red;
+}
+/* điều chỉnh hình ảnh */
+.containers {
+  display: flex; /* Thiết lập containers để sử dụng flexbox */
+  flex-wrap: wrap; /* Cho phép các items bên trong container tự động xuống dòng */
+  justify-content: space-around; /* Phân bố khoảng trống xung quanh mỗi item */
+  padding: 0px; /* Khoảng cách từ cạnh container đến các items bên trong */
+}
+.img {
+  width: 100%; /* Đảm bảo hình ảnh vừa khung */
+  height: 50%;
+  object-fit: cover; /* Hiển thị hình ảnh mà không làm biến dạng */
+}
+.cards {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Tạo bóng đổ cho card */
+  transition: 0.3s; /* Thời gian chuyển đổi cho hiệu ứng hover */
+  width: 30%; /* Chiều rộng của card là 30% so với container */
+  margin: 0px; /* Khoảng cách giữa các card */
+  padding: 0px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Tăng kích thước bóng đổ khi hover */
+}
+.content {
+  padding: 20px; /* Khoảng cách từ cạnh card đến nội dung bên trong */
+}
+.content h3{
+  text-align: center;
+}
